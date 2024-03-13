@@ -24,7 +24,7 @@ You will need to complete the following tasks. If you're unclear about any of th
 
 - [ ] When a color is clicked in the `#palette`, the `#current-color` element should have its background changed to that color. For example, if you click the green circle in the `#palette`, the `#current-color` element's background should change to be green.
 
-- [ ] When you click on a `.cell`, its background should change to match the background of `#current-color`. *Note: The cells do not appear on the canvas when launching this lab. It's your job to add a new cells.* 
+- [ ] When you click on a `.cell`, its background should change to match the background of `#current-color`. *Note: The cells do not appear on the canvas when launching this lab. It's your job to add new cells.* 
 
 ![pixel painter demo](./assets/ezgif.com-pixel-painter.gif)
 
