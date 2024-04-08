@@ -1,74 +1,117 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
-
-html,
-body {
-  margin: 0;
+* {
   padding: 0;
-  height: 100%;
-  font-family: "Raleway", sans-serif;
-  background-color: black;
-  color: ghostwhite;
+  margin: 0;
+  font-family: 'Itim', cursive;
 }
 
-h1 {
+.background {
+  background-color: #12181B;
+  height: 100vh;
+  padding-top: 1px;
+}
+
+.title {
+  color: purple;
   text-align: center;
-  color: plum;
-  font-size: 3em;
+  font-size: 40px;
+  margin-top: 10%;
 }
 
-.tic-tac-toe {
-  width: 370px;
-  margin: auto;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2em 0;
+.display {
+  color: purple;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-.square {
-  height: 120px;
-  width: 120px;
-  border: 1px solid rgb(255, 164, 222);
+.hide {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  max-width: 300px;
+
+}
+
+.tile {
+  border: 1px solid purple;
+  min-width: 100px;
+  min-height: 100px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 2em;
-  font-weight: bold;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+ 
 }
 
-.square:hover {
-  background: plum;
+.tile:hover {
+  background-color: rgb(164, 79, 164);
 }
 
-.square:active {
-  background-color: rebeccapurple;
+.tile:active {
+  background-color: lightpink;
 }
 
-#wrapper {
-  min-height: 90%;
-  margin-bottom: -100px;
+.playerX {
+  color: white;
+
+}
+
+.playerO {
+  color: rgb(95, 97, 214);
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.controls button {
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.restart {
+  background-color: #498AFB;
+}
+
+#reset {
+  background-color: rgb(164, 79, 164);
+}
+
+footer {
+  position: relative;
+  bottom: 10%;
+  
 }
 
 nav {
   display: flex;
   justify-content: space-evenly;
-}
-
-button {
-  padding: 1em;
-  font-family: "Raleway";
-  font-weight: bold;
-  font-size: 1em;
-  display: block;
-  margin: auto;
-  background: plum;
+  bottom: 50%;
 }
 
 a {
   text-decoration: none;
-  color: plum;
+  color: rgb(95, 97, 214);
   font-size: 2em;
+  
 }
+
 a:hover {
   background-color: blanchedalmond;
   opacity: 0.5;
